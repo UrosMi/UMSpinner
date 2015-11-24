@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UMSpinner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,68 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmy-4p-SVc" customClass="UMSpinner" customModule="UMSpinner" customModuleProvider="target">
+                                <rect key="frame" x="220" y="220" width="160" height="160"/>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="DgX-MU-kdD"/>
+                                    <constraint firstAttribute="width" secondItem="Mmy-4p-SVc" secondAttribute="height" multiplier="1:1" id="Pry-mV-I3c"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="XXL-Oi-w7A">
+                                <rect key="frame" x="282" y="388" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8O-Is-2cl" customClass="UMSpinner" customModule="UMSpinner" customModuleProvider="target">
+                                <rect key="frame" x="220" y="52" width="160" height="160"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="1bP-Dz-6y2"/>
+                                    <constraint firstAttribute="width" secondItem="b8O-Is-2cl" secondAttribute="height" multiplier="1:1" id="FyA-dM-Loa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="88x-jC-YHo" customClass="UMSpinner" customModule="UMSpinner" customModuleProvider="target">
+                                <rect key="frame" x="220" y="427" width="160" height="160"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="88x-jC-YHo" secondAttribute="height" multiplier="1:1" id="1F4-dB-JZo"/>
+                                    <constraint firstAttribute="width" constant="160" id="4LZ-ep-7lv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XXL-Oi-w7A" firstAttribute="centerX" secondItem="Mmy-4p-SVc" secondAttribute="centerX" id="0TE-xp-PF4"/>
+                            <constraint firstItem="Mmy-4p-SVc" firstAttribute="top" secondItem="b8O-Is-2cl" secondAttribute="bottom" constant="8" id="1EC-nh-Ipl"/>
+                            <constraint firstItem="88x-jC-YHo" firstAttribute="width" secondItem="88x-jC-YHo" secondAttribute="height" multiplier="1:1" id="4T7-5l-mAK"/>
+                            <constraint firstItem="88x-jC-YHo" firstAttribute="top" secondItem="XXL-Oi-w7A" secondAttribute="bottom" constant="2" id="5Uh-Yd-V7S"/>
+                            <constraint firstItem="b8O-Is-2cl" firstAttribute="width" secondItem="b8O-Is-2cl" secondAttribute="height" multiplier="1:1" id="LxI-bJ-6vO"/>
+                            <constraint firstItem="Mmy-4p-SVc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pxz-Rc-YeX"/>
+                            <constraint firstItem="88x-jC-YHo" firstAttribute="width" secondItem="88x-jC-YHo" secondAttribute="height" multiplier="1:1" id="VXy-m2-zTO"/>
+                            <constraint firstItem="88x-jC-YHo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WhQ-aN-pnC"/>
+                            <constraint firstItem="XXL-Oi-w7A" firstAttribute="top" secondItem="Mmy-4p-SVc" secondAttribute="bottom" constant="8" symbolic="YES" id="WjP-nI-1mt"/>
+                            <constraint firstItem="88x-jC-YHo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dIY-4a-ima"/>
+                            <constraint firstItem="b8O-Is-2cl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pDz-Nk-JYY"/>
+                            <constraint firstItem="Mmy-4p-SVc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q3G-k8-Jc1"/>
+                            <constraint firstItem="88x-jC-YHo" firstAttribute="leading" secondItem="Mmy-4p-SVc" secondAttribute="trailing" constant="8" id="yay-Bd-5gk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dIY-4a-ima"/>
+                                <exclude reference="yay-Bd-5gk"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="iOSSpinner" destination="XXL-Oi-w7A" id="3By-UV-vON"/>
+                        <outlet property="spinner" destination="Mmy-4p-SVc" id="xdX-BW-bI1"/>
+                        <outlet property="spinnerII" destination="b8O-Is-2cl" id="onh-oN-H3m"/>
+                        <outlet property="spinnerIII" destination="88x-jC-YHo" id="rNK-QX-RbL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="400" y="262"/>
         </scene>
     </scenes>
 </document>

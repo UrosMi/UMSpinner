@@ -10,16 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var iOSSpinner: UIActivityIndicatorView!
+    @IBOutlet weak var spinner: UMSpinner!
+    @IBOutlet weak var spinnerII: UMSpinner!
+    @IBOutlet weak var spinnerIII: UMSpinner!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        spinner.configureSpinner(withStyle: .NativePetals)
+        
+        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(2 * Double(NSEC_PER_SEC)))
+        dispatch_after(delayTime, dispatch_get_main_queue()) {
+            self.spinner.startSpinning()
+        }
+
+        spinnerII.configureSpinner(withStyle: .FadingBeads)
+        spinnerII.startSpinning()
+        spinnerIII.configureSpinner(withStyle: .FadingHexagons)
+        spinnerIII.startSpinning()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 

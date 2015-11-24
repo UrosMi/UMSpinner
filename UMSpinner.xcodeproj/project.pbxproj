@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4953AE191BE264A200E3CCF2 /* UMSpinnerStyleEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4953AE181BE264A200E3CCF2 /* UMSpinnerStyleEnum.swift */; };
 		4988A3491BE0CC1D003967EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4988A3481BE0CC1D003967EE /* AppDelegate.swift */; };
 		4988A34B1BE0CC1D003967EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4988A34A1BE0CC1D003967EE /* ViewController.swift */; };
 		4988A34E1BE0CC1D003967EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4988A34C1BE0CC1D003967EE /* Main.storyboard */; };
 		4988A3501BE0CC1D003967EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4988A34F1BE0CC1D003967EE /* Assets.xcassets */; };
 		4988A3531BE0CC1D003967EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4988A3511BE0CC1D003967EE /* LaunchScreen.storyboard */; };
+		4988A35B1BE0CC38003967EE /* UMSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4988A35A1BE0CC38003967EE /* UMSpinner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4953AE181BE264A200E3CCF2 /* UMSpinnerStyleEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMSpinnerStyleEnum.swift; sourceTree = "<group>"; };
 		4988A3451BE0CC1D003967EE /* UMSpinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMSpinner.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4988A3481BE0CC1D003967EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4988A34A1BE0CC1D003967EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4988A3481BE0CC1D003967EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = UMSpinner/AppDelegate.swift; sourceTree = "<group>"; };
+		4988A34A1BE0CC1D003967EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = UMSpinner/ViewController.swift; sourceTree = "<group>"; };
 		4988A34D1BE0CC1D003967EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4988A34F1BE0CC1D003967EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4988A3521BE0CC1D003967EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4988A3541BE0CC1D003967EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4988A35A1BE0CC38003967EE /* UMSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMSpinner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,8 @@
 		4988A33C1BE0CC1D003967EE = {
 			isa = PBXGroup;
 			children = (
+				4988A3481BE0CC1D003967EE /* AppDelegate.swift */,
+				4988A34A1BE0CC1D003967EE /* ViewController.swift */,
 				4988A3471BE0CC1D003967EE /* UMSpinner */,
 				4988A3461BE0CC1D003967EE /* Products */,
 			);
@@ -54,8 +60,8 @@
 		4988A3471BE0CC1D003967EE /* UMSpinner */ = {
 			isa = PBXGroup;
 			children = (
-				4988A3481BE0CC1D003967EE /* AppDelegate.swift */,
-				4988A34A1BE0CC1D003967EE /* ViewController.swift */,
+				4988A35A1BE0CC38003967EE /* UMSpinner.swift */,
+				4953AE181BE264A200E3CCF2 /* UMSpinnerStyleEnum.swift */,
 				4988A34C1BE0CC1D003967EE /* Main.storyboard */,
 				4988A34F1BE0CC1D003967EE /* Assets.xcassets */,
 				4988A3511BE0CC1D003967EE /* LaunchScreen.storyboard */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4988A35B1BE0CC38003967EE /* UMSpinner.swift in Sources */,
 				4988A34B1BE0CC1D003967EE /* ViewController.swift in Sources */,
+				4953AE191BE264A200E3CCF2 /* UMSpinnerStyleEnum.swift in Sources */,
 				4988A3491BE0CC1D003967EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +292,7 @@
 				4988A3591BE0CC1D003967EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
